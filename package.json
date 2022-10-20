@@ -1,0 +1,14 @@
+{
+  "dependencies": {
+    "socket.io": "^4.5.3"
+  }
+}
+{
+  "method": "SUBSCRIBE",
+  "params":
+  [
+  "btcusdt@aggTrade",
+  "btcusdt@depth"
+  ],
+  "id": 1
+}
