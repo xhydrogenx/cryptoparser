@@ -1,14 +1,17 @@
 <html>
- <head>
-    <tittle>CurrencyView</tittle>
-</head>
-<body>
-    <h1>Курс BTCUSDT</h1>
+    <head>
+        <title>Currency view</title>
+        <style>
+            body { background: black; color: lightgreen; font-family: courier; }
+            .panel { width: 600; font-size: 20px; padding: 20px; border: solid lightgreen 1px; }
+        </style>
+    </head>
 
-    <div id="trades"></div>
-
-    <script src='./app.js'>
-    </script>
-
-</body>
+    <body>
+        <h1>trades</h1>
+        <div id="test" class="panel"></div>
+        <script async src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+        <script src="app.js"></script>
+        
+    </body>
 </html>
