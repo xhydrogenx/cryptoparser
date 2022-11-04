@@ -31,13 +31,11 @@ binanceSocket.onmessage = function (event){
     var messageObject = JSON.parse(event.data);
     console.log(messageObject.p);
         
-    //binancePrice.append(messageObject.p + " "); 
+    binancePrice.append(messageObject.p + " "); 
     test.append(" ")
     
-    if (test != messageObject.p){
-        test.append(messageObject.p + " ")
-    }
-              
+    
+    //123         
 };
 
 

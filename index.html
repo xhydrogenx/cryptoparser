@@ -2,16 +2,29 @@
     <head>
         <title>Currency view</title>
         <style>
-            body { background: black; color: lightgreen; font-family: courier; }
-            .panel { width: 600; font-size: 20px; padding: 20px; border: solid lightgreen 1px; }
+            body { background: rgb(0, 0, 0); color: lightgreen; font-family: courier; }
+            
         </style>
+        <script src="https://unpkg.com/lightweight-charts/dist/lightweight-charts.standalone.production.js"></script>
     </head>
 
     <body>
-        <h1>trades</h1>
+        <h1>Prices</h1>
+        <div id="chart"></div>
+        <h3>Settings</h3>
+
+        <div id="settings">
+            <input type="checkbox"/> RSI
+            <input type="text" id="rsi_length" name="rsi_length" placeholder="14">
+            Oversold
+            <input type="text" id="rsi_oversold" name="rsi_oversold" placeholder="30"/>
+            Overbought
+            <input type="text" name="rsi_overbought" id="rsi_overbought" placeholder="70">
+        </div>
+
         <div id="test" class="panel"></div>
         <script async src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
-        <script src="app.js"></script>
         
+        <script src="chart.js"></script>
     </body>
 </html>
